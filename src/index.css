@@ -1,13 +1,34 @@
+@font-face {
+  font-family: RoyalFont;
+  src: url('./asstes/Candlescript.otf');
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: RoyalFont, Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(255,228,150);
+  background: -moz-radial-gradient(circle, rgba(255,228,150,1) 0%, rgba(255,162,203,1) 30%, rgb(173, 170, 255) 75%);
+  background: -webkit-radial-gradient(circle, rgba(255,228,150,1) 0%, rgba(255,162,203,1) 30%, rgba(197,195,255,1)75%);
+  background: radial-gradient(circle, rgba(255,228,150,1) 0%, rgba(255,162,203,1) 25%, rgba(197,195,255,1) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe496",endColorstr="#c5c3ff",GradientType=1);
+  background-size: 150% 150%;
+  height: 100vh;
+  animation: gradient 20s infinite;
+
+}
+@keyframes gradient {
+	0% {	background-position: 15% 15%;	}
+	55% {	background-position: 85% 85%;	}
+	100% {	background-position: 15% 15%;	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.bg{
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+};
