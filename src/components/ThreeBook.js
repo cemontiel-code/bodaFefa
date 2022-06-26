@@ -37,8 +37,8 @@ const ThreeBook = () => {
               real ? "cub-2 cub-2-deact" : "cub-2 cub-2-active"
             }`}
           >
-            <div className="face ft portada"></div>
-            <div className={`face bk ${real ? 'portada' :"pagina"}  `}>
+            <div className={`face ft ${real ? 'portada' :"pagina"}`}></div>
+            <div className={`face bk ${real ? 'portada' :"pagina"}`}>
               <LogoTop className="logo-top"></LogoTop>
               <div className="logo">
                 <h1> <b> Boda de Cardenas </b>  <br /> Montiel</h1>
