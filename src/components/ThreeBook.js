@@ -21,12 +21,12 @@ const ThreeBook = () => {
               real ? "cub-1" : "cub-1 cub-1-active"
             }`}
           >
-            <div className="face ft portada"></div>
+            <div className="face ft pagina"></div>
             <div className="face bk pagina">
               <MyBook></MyBook>
             </div>
             <div className="face rt sideview"></div>
-            <div className="face lt portada"></div>
+            <div className="face lt sideview"></div>
             <div className="face bm sideview"></div>
             <div className="face tp sideview"></div>
           </div>
@@ -46,7 +46,7 @@ const ThreeBook = () => {
               <LogoLeo className="logo-btm"></LogoLeo>
             </div>
             <div className="face rt sideview"></div>
-            <div className="face lt portada"></div>
+            <div className="face lt sideview"></div>
             <div className="face bm sideview"></div>
             <div className="face tp sideview"></div>
           </div>

@@ -2,11 +2,11 @@ import HTMLFlipBook from "react-pageflip";
 
 function MyBook( ) {
 
-  const heightData = 400;
-  const widthData = 400;
+  const heightData = () => {  };
+  const widthData = ()  => {  };
 
   return (
-    <HTMLFlipBook width={272} height={400} autoSize='trueno'  >
+    <HTMLFlipBook width={272} height={400} autoSize='true'  >
         <div className="pagina">Page 1</div>
         <div className="pagina">Page 2
         </div>
