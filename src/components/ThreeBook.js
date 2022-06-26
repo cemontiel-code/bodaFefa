@@ -38,7 +38,7 @@ const ThreeBook = () => {
             }`}
           >
             <div className="face ft portada"></div>
-            <div className="face bk portada">
+            <div className={`face bk ${real ? 'portada' :"pagina"}  `}>
               <LogoTop className="logo-top"></LogoTop>
               <div className="logo">
                 <h1> <b> Boda de Cardenas </b>  <br /> Montiel</h1>
