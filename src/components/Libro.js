@@ -27,9 +27,14 @@ function MyBook() {
         probar Una servilleta así, chérie y nosotros hacemos lo demás.{" "}
       </div>
       <div className="pagina">
+        <div style={"display:flex"}>
+          <div >
+
+          </div>
+        </div>
         “No hay tristeza ni protesta cuando aquí se hace la fiesta. Habrá trucos
         sin par y mil bromas que contar”{" "}
-      </div>
+      </-div>
       <div className="pagina">Page 3</div>
       <div className="pagina">Page sad 4</div>
       <div className="pagina">Page 5</div>
