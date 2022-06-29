@@ -69,7 +69,7 @@
 }
 
 .burbuja {
-  /*animation: bubleFloat 4s ease-in-out infinite;*/
+  animation: bubleFloat 4s ease-in-out infinite;
   height: 85vh;
   width: 85vh;
   background: radial-gradient(
@@ -94,7 +94,7 @@
     transform:  translatey(0px) ;
   }
   50% {
-    transform:  translatey(-80px) ;
+    transform:  translatey(-40px) ;
   }
   100% {
     transform: translatey(0px) ;
@@ -107,6 +107,7 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
 }
 
 @keyframes pop {

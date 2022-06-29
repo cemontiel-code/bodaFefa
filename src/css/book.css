@@ -134,7 +134,6 @@
   width: 17em;
   height: 25em;
   margin: -12.5em 0 0 -8.5em;
-  
 }
 
 [class*="cub-1-active"] {
@@ -142,7 +141,7 @@
   width: 17em;
   height: 25em;
   margin: -12.5em 0em 0 -8.5em;
-  
+
   animation: openR 1000ms linear forwards;
 }
 
@@ -187,9 +186,10 @@
     transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
       rotateZ(0deg);
   }
-  100%{
+  100% {
     transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
       rotateZ(0deg);
+      visibility: hidden;
   }
 }
 
@@ -284,7 +284,7 @@
   100% {
     transform: translate3D(-8.5em, 0em, -0.1em) rotateX(0deg) rotateY(000deg)
       rotateZ(0deg);
-      
+      visibility: hidden;
   }
 }
 
@@ -325,4 +325,54 @@
 }
 .cub-2 .rt {
   background-color: #3a732b;
+}
+
+.cub-3 {
+  transform: translate3D(0em, 0em, 01.02em) rotateX(00deg) rotateY(0deg)
+    rotateZ(0deg);
+  opacity: 1;
+  width: 70vw;
+  height: 90vh;
+  margin: -45.5vh 0 0 -35vw;
+  visibility: hidden;
+}
+
+.cub-3-active{
+  transform: translate3D(0em, 0em, 01.02em) rotateX(00deg) rotateY(0deg)
+    rotateZ(0deg);
+  opacity: 1;
+  width: 70vw;
+  height: 90vh;
+  margin: -45.5vh 0 0 -35vw;
+  animation: displaybook 3s ease-in-out forwards;
+}
+
+@keyframes displaybook {
+  0% {
+    visibility: hidden;
+  }
+  70%{ visibility: hidden;}
+  100% {
+    visibility: visible;
+  }
+}
+.cub-3 .ft {
+  transform: translateZ(1.5em);
+}
+.cub-3 .bk {
+  transform: translateZ(-1.5em) rotateY(180deg);
+}
+.cub-3 .rt,
+.cub-3 .lt {
+  width: 3em;
+  height: 25em;
+}
+.cub-3 .tp,
+.cub-3 .bm {
+  width: 34em;
+  height: 3em;
+}
+.cub-3 .face {
+  background-color: rgba(0, 255, 255, 0);
+  background-image: url('/src/asstes/13.png');
 }

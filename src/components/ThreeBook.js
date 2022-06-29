@@ -22,9 +22,7 @@ const ThreeBook = () => {
             }`}
           >
             <div className="face ft pagina"></div>
-            <div className="face bk pagina">
-              <MyBook></MyBook>
-            </div>
+            <div className="face bk pagina"></div>
             <div className="face rt sideview"></div>
             <div className="face lt sideview"></div>
             <div className="face bm sideview"></div>
@@ -32,23 +30,37 @@ const ThreeBook = () => {
           </div>
 
           <div
-          id='hola'
+            id="hola"
             className={`shape cuboid-2 ${
-              real ? "cub-2 cub-2-deact" : "cub-2 cub-2-active"
+              real ? "cub-2 " : "cub-2 cub-2-active"
             }`}
           >
-            <div className={`face ft ${real ? 'portada' :"pagina"}`}></div>
-            <div className={`face bk ${real ? 'portada' :"pagina"}`}>
+            <div className={`face ft ${real ? "portada" : "pagina"}`}></div>
+            <div className={`face bk portada`}>
               <LogoTop className="logo-top"></LogoTop>
               <div className="logo">
-                <h1> <b> Boda de Cardenas </b>  <br /> Montiel</h1>
+                <h1>
+                  {" "}
+                  <b> Boda de Cardenas </b> <br /> Montiel
+                </h1>
               </div>
               <LogoLeo className="logo-btm"></LogoLeo>
             </div>
             <div className="face rt sideview"></div>
-            <div className="face lt sideview"></div>
+            <div className="face lt portada"></div>
             <div className="face bm sideview"></div>
             <div className="face tp sideview"></div>
+          </div>
+
+          <div class={`shape cuboid-3 ${real ? 'cub-3':'cub-3 cub-3-active' }`}>
+            <div class="face ft">
+              <MyBook></MyBook>
+            </div>
+            <div class="face bk"></div>
+            <div class="face rt"></div>
+            <div class="face lt"></div>
+            <div class="face bm"></div>
+            <div class="face tp"></div>
           </div>
         </div>
       </div>

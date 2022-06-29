@@ -1,5 +1,4 @@
 import React from "react";
-import MyBook from "./Libro";
 import { useState } from "react";
 import ThreeBook from "./ThreeBook";
 
@@ -7,12 +6,13 @@ function Burbujas() {
   const [active, setActive] = useState(true);
 
   const popHandler = () => {
-    setActive(!active);
+    setActive(false);
   };
+
 
   return (
     <>
-      <div className={"burbuja"}
+      <div className={active ? "burbuja": 'popped'}
       onClick={popHandler}>
         <ThreeBook ></ThreeBook>
       </div>
