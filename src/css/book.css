@@ -43,6 +43,12 @@
 }
 
 @keyframes giros {
+  0% {
+    -webkit-transform: rotateX(var(--Ang-libro)) rotateY(0deg);
+    -moz-transform: rotateX(var(--Ang-libro)) rotateY(0deg);
+    -ms-transform: rotateX(var(--Ang-libro)) rotateY(0deg);
+    transform: rotateX(var(--Ang-libro)) rotateY(0deg);
+  }
   25% {
     -webkit-transform: rotateX(var(--Ang-libro)) rotateY(90deg);
     -moz-transform: rotateX(var(--Ang-libro)) rotateY(90deg);
@@ -128,7 +134,7 @@
 }
 /* .cub-1 styles */
 .cub-1 {
-  transform: translate3D(0em, -0.1em, 0em) rotateX(0deg) rotateY(00deg)
+  transform: translate3D(0em, -0.1em, -0.01em) rotateX(0deg) rotateY(00deg)
     rotateZ(0deg);
   opacity: 1;
   width: 17em;
@@ -142,7 +148,7 @@
   height: 25em;
   margin: -12.5em 0em 0 -8.5em;
 
-  animation: openR 1000ms linear forwards;
+  animation: openR 1500ms linear forwards;
 }
 
 @keyframes openR {
@@ -151,45 +157,47 @@
       rotateZ(0deg);
   }
   11% {
-    transform: translate3D(2.95em, 0em, 0em) rotateX(0deg) rotateY(100deg)
+    transform: translate3D(2.95em, -6.2em, 0em) rotateX(0deg) rotateY(100deg)
       rotateZ(0deg);
   }
   22% {
-    transform: translate3D(4.35em, 0em, 0em) rotateX(0deg) rotateY(110deg)
+    transform: translate3D(4.35em, -8.35em, 0em) rotateX(0deg) rotateY(110deg)
       rotateZ(0deg);
   }
   33% {
-    transform: translate3D(5.55em, 0em, 0em) rotateX(0deg) rotateY(120deg)
+    transform: translate3D(5.55em, -9.55em, 0em) rotateX(0deg) rotateY(120deg)
       rotateZ(0deg);
   }
   44% {
-    transform: translate3D(6.6em, 0em, 0em) rotateX(0deg) rotateY(130deg)
+    transform: translate3D(6.6em, -10.6em, 0em) rotateX(0deg) rotateY(130deg)
       rotateZ(0deg);
   }
   55% {
-    transform: translate3D(7.48em, 0em, 0em) rotateX(0deg) rotateY(140deg)
+    transform: translate3D(7.48em, -11.48em, 0em) rotateX(0deg) rotateY(140deg)
       rotateZ(0deg);
   }
   66% {
-    transform: translate3D(8.13em, 0em, 0em) rotateX(0deg) rotateY(150deg)
+    transform: translate3D(8.13em, -11.93em, 0em) rotateX(0deg) rotateY(150deg)
       rotateZ(0deg);
   }
   77% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(160deg)
+    transform: translate3D(8.5em, -12.5em, 0em) rotateX(0deg) rotateY(160deg)
       rotateZ(0deg);
   }
   88% {
-    transform: translate3D(8.6em, 0em, 0em) rotateX(0deg) rotateY(170deg)
+    transform: translate3D(8.6em, -12.5em, 0em) rotateX(0deg) rotateY(170deg)
       rotateZ(0deg);
   }
   99% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
+    transform: translate3D(8.5em, -12.5em, 0em) rotateX(0deg) rotateY(180deg)
       rotateZ(0deg);
   }
   100% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
+    transform: translate3D(8.5em, -12.5em, 0em) rotateX(0deg) rotateY(180deg)
       rotateZ(0deg);
-      visibility: hidden;
+    width: 35vw;
+    height: 90vh;
+    visibility: hidden;
   }
 }
 
@@ -212,24 +220,7 @@
 .cub-1 .face {
   background-color: #ffffff;
 }
-.cub-1 .ft {
-  background-color: #f5b400;
-}
-.cub-1 .bk {
-  background-color: #e100ff;
-}
-.cub-1 .tp {
-  background-color: #713232;
-}
-.cub-1 .bm {
-  background-color: #0f0606;
-}
-.cub-1 .lt {
-  background-color: #191f3e;
-}
-.cub-1 .rt {
-  background-color: #3a732b;
-}
+
 /* .cub-2 styles */
 .cub-2 {
   transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(180deg)
@@ -241,7 +232,7 @@
 }
 
 [class*="cub-2-active"] {
-  animation: openL 1000ms linear forwards;
+  animation: openL 1500ms linear forwards;
 }
 
 @keyframes openL {
@@ -250,41 +241,43 @@
       rotateZ(0deg);
   }
   11% {
-    transform: translate3D(-2.95em, 0em, 0em) rotateX(0deg) rotateY(080deg)
+    transform: translate3D(-2.95em, -6.2em, 0em) rotateX(0deg) rotateY(080deg)
       rotateZ(0deg);
   }
   22% {
-    transform: translate3D(-4.35em, 0em, 0em) rotateX(0deg) rotateY(070deg)
+    transform: translate3D(-4.35em, -8.35em, 0em) rotateX(0deg) rotateY(070deg)
       rotateZ(0deg);
   }
   33% {
-    transform: translate3D(-5.55em, 0em, 0em) rotateX(0deg) rotateY(060deg)
+    transform: translate3D(-5.55em, -9.55em, 0em) rotateX(0deg) rotateY(060deg)
       rotateZ(0deg);
   }
   44% {
-    transform: translate3D(-6.6em, 0em, 0em) rotateX(0deg) rotateY(050deg)
+    transform: translate3D(-6.6em, -10.6em, 0em) rotateX(0deg) rotateY(050deg)
       rotateZ(0deg);
   }
   55% {
-    transform: translate3D(-7.48em, 0em, 0em) rotateX(0deg) rotateY(040deg)
+    transform: translate3D(-7.48em, -11.48em, 0em) rotateX(0deg) rotateY(040deg)
       rotateZ(0deg);
   }
   66% {
-    transform: translate3D(-8.13em, 0em, 0em) rotateX(0deg) rotateY(030deg)
+    transform: translate3D(-8.13em, -11.93em, 0em) rotateX(0deg) rotateY(030deg)
       rotateZ(0deg);
   }
   77% {
-    transform: translate3D(-8.5em, 0em, 0em) rotateX(0deg) rotateY(020deg)
+    transform: translate3D(-8.5em, -12.5em, 0em) rotateX(0deg) rotateY(020deg)
       rotateZ(0deg);
   }
   88% {
-    transform: translate3D(-8.6em, 0em, 0em) rotateX(0deg) rotateY(010deg)
+    transform: translate3D(-8.6em, -12.5em, 0em) rotateX(0deg) rotateY(010deg)
       rotateZ(0deg);
   }
   100% {
-    transform: translate3D(-8.5em, 0em, -0.1em) rotateX(0deg) rotateY(000deg)
-      rotateZ(0deg);
-      visibility: hidden;
+    transform: translate3D(-8.5em, -12.5em, -0.1em) rotateX(0deg)
+      rotateY(000deg) rotateZ(0deg);
+    width: 35vw;
+    height: 90vh;
+    visibility: hidden;
   }
 }
 
@@ -308,27 +301,9 @@
 .cub-2 .face {
   background-color: pink;
 }
-.cub-2 .ft {
-  background-color: pink;
-}
-.cub-2 .bk {
-  background-color: pink;
-}
-.cub-2 .tp {
-  background-color: #713232;
-}
-.cub-2 .bm {
-  background-color: #0f0606;
-}
-.cub-2 .lt {
-  background-color: blueviolet;
-}
-.cub-2 .rt {
-  background-color: #3a732b;
-}
 
 .cub-3 {
-  transform: translate3D(0em, 0em, 01.02em) rotateX(00deg) rotateY(0deg)
+  transform: translate3D(0em, 0em, .02em) rotateX(00deg) rotateY(0deg)
     rotateZ(0deg);
   opacity: 1;
   width: 70vw;
@@ -337,21 +312,24 @@
   visibility: hidden;
 }
 
-.cub-3-active{
-  transform: translate3D(0em, 0em, 01.02em) rotateX(00deg) rotateY(0deg)
+.cub-3-active {
+  transform: translate3D(0em, 0em, .02em) rotateX(00deg) rotateY(0deg)
     rotateZ(0deg);
   opacity: 1;
   width: 70vw;
   height: 90vh;
   margin: -45.5vh 0 0 -35vw;
-  animation: displaybook 3s ease-in-out forwards;
+  padding: 0%;
+  animation: displaybook 2700ms ease-in-out forwards;
 }
 
 @keyframes displaybook {
   0% {
     visibility: hidden;
   }
-  70%{ visibility: hidden;}
+  70% {
+    visibility: hidden;
+  }
   100% {
     visibility: visible;
   }
@@ -374,5 +352,94 @@
 }
 .cub-3 .face {
   background-color: rgba(0, 255, 255, 0);
-  background-image: url('/src/asstes/13.png');
+  background-image: url("/src/asstes/paginBg.png");
+}
+
+@media (max-width: 844px) and (orientation: landscape) {
+  .cub-3 .tp,
+  .cub-3 .bm {
+    width: 17em;
+    height: 1.5em;
+  }
+
+  .cub-3 .rt,
+  .cub-3 .lt {
+    width: 1.5em;
+    height: 12.5em;
+  }
+
+  .cub-2 .rt,
+  .cub-2 .lt {
+    width: 1.5em;
+    height: 12.5em;
+  }
+  .cub-2 .tp,
+  .cub-2 .bm {
+    width: 9.55em;
+    height: 1.5em;
+  }
+
+  .cub-1 .rt,
+  .cub-1 .lt {
+    width: 1.5em;
+    height: 12.5em;
+  }
+  .cub-1 .tp,
+  .cub-1 .bm {
+    width: 9.5em;
+    height: 1.5em;
+  }
+
+  .cub-1,
+  .cub-2 {
+    width: 9.5em;
+    height: 12.5em;
+    margin: -6.25em 0 0 -4.75em;
+  }
+
+  
+  .cub-3 {
+    width: 80vw;
+    height: 100vh;
+    margin: -50vh 0 0 -40vw;
+  }
+
+  .cub-3-active {
+    transform: translate3D(0em, 0em, 1.02em) rotateX(00deg) rotateY(0deg)
+      rotateZ(0deg);
+    opacity: 1;
+    width: 80vw;
+    height: 100vh;
+    margin: -50vh 0 0 -40vw;
+    padding: 0%;
+    animation: displaybook 2700ms ease-in-out forwards;}
+
+  .cub-1 .ft {
+    transform: translateZ(0.75em);
+  }
+  .cub-1 .bk {
+    transform: translateZ(-0.75em) rotateY(180deg);
+  }
+  .cub-2 .ft {
+    transform: translateZ(0.75em);
+  }
+  .cub-2 .bk {
+    transform: translateZ(-0.75em) rotateY(180deg);
+  }
+  .cub-3 .ft {
+    transform: translateZ(0.75em);
+  }
+  .cub-3 .bk {
+    transform: translateZ(-0.75em) rotateY(180deg);
+  }
+
+  .scene {
+    animation: none;
+    transform: rotateX(var(--Ang-libro));
+    width: 80em;
+    height: 80em;
+    top: 50%;
+    left: 50%;
+    margin: -40em 0 0 -40em;
+  }
 }

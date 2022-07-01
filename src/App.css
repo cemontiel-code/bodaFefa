@@ -7,10 +7,177 @@
 }
 
 .pagina {
-  background-image: url(asstes/paper-both-c.png);
+  background-image: url(asstes/paginBg.png);
   background-size: 100% 100%;
-  text-align: center ;
+  text-align: center;
   align-items: center;
+}
+
+.pagina-content {
+  margin: 15% 15%;
+  width: 70%;
+  height: 80%;
+  color: #86620f;
+  text-rendering: optimizeLegibility;
+}
+
+.pagina-content p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 36px;
+}
+
+.pagina-content h3 {
+  font-size: 42px;
+}
+
+.pagina-content h4 {
+  font-size: 40px;
+}
+
+.location-modal-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30%;
+}
+
+.modals {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  right: 20%;
+  bottom: 5%;
+  border: none;
+  border-radius: 2%;
+  padding: 0.5% 2% 0.5% 2%;
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(
+    132deg,
+    rgba(205, 150, 255, 0.8) 0%,
+    rgba(254, 255, 162, 0.8) 50%,
+    rgba(195, 255, 247, 0.8) 100%
+  );
+  z-index: 100;
+}
+.modalsOverlay {
+  background-color: rgba(68, 68, 68, 0.7);
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modals h3 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.modals h4 {
+  margin-bottom: 2%;
+  margin-top: 1%;
+  font-size: 1.4em;
+}
+.modals p {
+  margin-bottom: 1%;
+}
+
+.modals .picture {
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  right: 0%;
+  bottom: 55%;
+}
+
+.modals .descRep {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.modals .picture h4 {
+  position: absolute;
+  bottom: 0.5%;
+  right: 0%;
+  width: 100%;
+  color: white;
+  background-color: rgba(65, 56, 48, 0.5);
+  text-shadow: 2px 3px #bd8b17;
+}
+
+.modals-close-btn {
+  position: absolute;
+  right: 3%;
+  top: 1%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  border: 1px black groove;
+}
+
+.modals-close-btn:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+
+.btn-modals {
+  background-size: contain;
+  border-radius: 15px;
+  margin-bottom: 5%;
+  max-width: 60%;
+  max-height: 10%;
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+}
+
+.btn-modals:hover {
+  background-color: #c0c0c0;
+  color: #86620f;
+  transform: scale(1.02);
+}
+.videoCamera {
+  fill: white;
+}
+.clothes {
+  fill: #bd8b17;
+}
+.bank {
+  fill: white;
+  outline-color: #2d8cff;
+}
+#zoom-btn {
+  height: 20px;
+  background-color: #2d8cff;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2% /5%;
+  box-shadow: black 2px 2px 5px;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.Bnk-data-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  border-radius: 15px;
+  max-width: 45%;
+  bottom: 2%;
+  padding: 2%;
+  text-overflow: ellipsis;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.bankDiv {
+  display: flex;
+  justify-content: space-around;
 }
 
 .libro {
@@ -91,13 +258,13 @@
 
 @keyframes bubleFloat {
   0% {
-    transform:  translatey(0px) ;
+    transform: translatey(0px);
   }
   50% {
-    transform:  translatey(-40px) ;
+    transform: translatey(-40px);
   }
   100% {
-    transform: translatey(0px) ;
+    transform: translatey(0px);
   }
 }
 
@@ -209,4 +376,76 @@
   top: 0;
   left: 0%;
 }
+.warning {
+  height: 90vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 48px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 5%;
+  opacity: 0;
+  z-index: -5;
+}
 
+@media (max-width: 844px) and (orientation: portrait) {
+  .warning {
+    opacity: 1;
+  }
+  .main {
+    opacity: 0;
+  }
+}
+@media (max-width: 844px) and (orientation: landscape) {
+  .warning {
+    opacity: 0;
+  }
+  .main {
+    opacity: 1;
+  }
+  .bankDiv {
+    display: block;
+  }
+  .Bnk-data-bg {
+    max-width: 95%;
+    font-size: 10px;
+    border-radius: 0;
+  }
+
+  .modals{
+    overflow-y: scroll;
+    border-radius: 15px 15px 0 0 ;
+    bottom: 0%;
+    top: 5%;
+    left: 2%;
+    right: 2%;
+  }
+  .logo{
+    font-size:12px ;
+  }
+
+  .pagina-content{
+    margin: 7.5%;
+    width: 80%;
+    overflow-y: scroll;
+
+  }
+  .pagina-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  
+  .pagina-content h3 {
+    font-size: 32px;
+  }
+  
+  .pagina-content h4 {
+    font-size: 28px;
+  }
+
+}

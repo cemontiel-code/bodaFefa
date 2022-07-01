@@ -8,6 +8,7 @@ import MyBook from "./Libro";
 const ThreeBook = () => {
   const [real, setActive] = useState(true);
 
+  //const atributtion ='<a href="https://www.vecteezy.com/free-vector/vector">Vector Vectors by Vecteezy</a>'
   const popHandler = () => {
     setActive(false);
   };
@@ -21,8 +22,8 @@ const ThreeBook = () => {
               real ? "cub-1" : "cub-1 cub-1-active"
             }`}
           >
-            <div className="face ft pagina"></div>
-            <div className="face bk pagina"></div>
+            <div className={`face ft ${real ? "portada" : "pagina"}`}></div>
+            <div className="face bk portada"></div>
             <div className="face rt sideview"></div>
             <div className="face lt sideview"></div>
             <div className="face bm sideview"></div>
@@ -40,8 +41,7 @@ const ThreeBook = () => {
               <LogoTop className="logo-top"></LogoTop>
               <div className="logo">
                 <h1>
-                  {" "}
-                  <b> Boda de Cardenas </b> <br /> Montiel
+                   Boda de Cardenas <br /> Montiel
                 </h1>
               </div>
               <LogoLeo className="logo-btm"></LogoLeo>
