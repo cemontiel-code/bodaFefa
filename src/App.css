@@ -14,10 +14,12 @@
 }
 
 .pagina-content {
-  margin: 15% 15%;
+  margin: 5% 15%;
   width: 70%;
-  height: 80%;
-  color: #86620f;
+  height: 85%;
+  color: #86620f; 
+  text-align: center;
+  justify-content: center;
   text-rendering: optimizeLegibility;
 }
 
@@ -269,7 +271,7 @@
 }
 
 .popped {
-  animation: pop 700ms linear forwards;
+  animation: pop 1700ms linear forwards;
   margin: 0%;
   display: flex;
   justify-content: center;
@@ -431,7 +433,7 @@
   .pagina-content{
     margin: 7.5%;
     width: 80%;
-    overflow-y: scroll;
+    overflow-y: scroll  ;
 
   }
   .pagina-content p {

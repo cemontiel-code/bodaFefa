@@ -22,8 +22,8 @@ const ThreeBook = () => {
               real ? "cub-1" : "cub-1 cub-1-active"
             }`}
           >
-            <div className={`face ft ${real ? "portada" : "pagina"}`}></div>
-            <div className="face bk portada"></div>
+            <div className={`face ft portada`}></div>
+            <div className={`face ft pagina`}></div>
             <div className="face rt sideview"></div>
             <div className="face lt sideview"></div>
             <div className="face bm sideview"></div>
