@@ -2,9 +2,11 @@
   --Ang-libro: 25deg;
 }
 
-.App {
-  text-align: center;
+@font-face {
+  font-family: RoyalFont;
+  src: url('./asstes/Candlescript.otf');
 }
+
 
 .pagina {
   background-image: url(asstes/paginBg.png);
@@ -14,33 +16,35 @@
 }
 
 .pagina-content {
-  margin: 5% 15%;
-  width: 70%;
-  height: 85%;
-  color: #86620f; 
+  margin: 10% 17.5%;
+  width: 65%;
+  height: 70%;
+  color: #86620f;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
   justify-content: center;
   text-rendering: optimizeLegibility;
 }
 
 .pagina-content p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .pagina-content h3 {
-  font-size: 42px;
+  font-size: 32px;
 }
 
 .pagina-content h4 {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .location-modal-group {
   display: flex;
   flex-direction: column;
-  margin-left: 30%;
+  justify-content: center;
+  align-items: center;
 }
 
 .modals {
@@ -129,19 +133,22 @@
 }
 
 .btn-modals {
-  background-size: contain;
   border-radius: 15px;
-  margin-bottom: 5%;
-  max-width: 60%;
-  max-height: 10%;
-  font-size: 16px;
-  padding: 5px;
+  margin-bottom: 10%;
+  max-width: 80%;
+  font-size: 28px;
+  padding: 7px;
   border: none;
+  color: #7c5c11;
+  font-family: RoyalFont;
+  text-rendering: optimizeLegibility;
+  transition: 400ms;
 }
 
 .btn-modals:hover {
-  background-color: #c0c0c0;
-  color: #86620f;
+  background-color: #63a9eb;
+  color: white;
+  box-shadow: 2px 3px 5px #755200b7;
   transform: scale(1.02);
 }
 .videoCamera {
@@ -188,24 +195,26 @@
 
 .portada {
   background-image: url(asstes/13.png);
-  background-size: 100% 100%;
   width: 97%;
   height: 97%;
   margin: 0%;
   padding: 0%;
-  justify-content: center;
-  justify-items: center;
+}
+
+.bookCover {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-top {
-  position: relative;
+  position: absolute;
   width: 98%;
-  top: 1%;
+  top: 0%;
 }
 .logo-btm {
-  position: relative;
+  position: absolute;
   width: 98%;
-  bottom: -25%;
+  bottom: 0%;
 }
 
 .sideview {
@@ -216,7 +225,7 @@
 }
 
 .logo {
-  top: 20%;
+  top: 15%;
   left: 7.5%;
   width: 85%;
   height: 50%;
@@ -224,7 +233,6 @@
   color: rgba(255, 255, 255, 0.842);
   font-size: 1.2em;
   text-align: center;
-  display: flex;
   justify-content: center;
   text-shadow: 2px 2px #b28c33b6;
   text-rendering: optimizeLegibility;
@@ -271,7 +279,7 @@
 }
 
 .popped {
-  animation: pop 1700ms linear forwards;
+  animation: pop 700ms linear forwards;
   margin: 0%;
   display: flex;
   justify-content: center;
@@ -394,7 +402,7 @@
   z-index: -5;
 }
 
-@media (max-width: 844px) and (orientation: portrait) {
+@media (max-width: 900px) and (orientation: portrait) {
   .warning {
     opacity: 1;
   }
@@ -402,7 +410,7 @@
     opacity: 0;
   }
 }
-@media (max-width: 844px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) {
   .warning {
     opacity: 0;
   }
@@ -418,36 +426,41 @@
     border-radius: 0;
   }
 
-  .modals{
+  .modals {
     overflow-y: scroll;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
     bottom: 0%;
     top: 5%;
     left: 2%;
     right: 2%;
   }
-  .logo{
-    font-size:12px ;
+
+  .logo {
+    font-size: 14px;
   }
 
-  .pagina-content{
-    margin: 7.5%;
-    width: 80%;
-    overflow-y: scroll  ;
-
+  .pagina-content {
+    margin: 15% 20%;
+    width: 60%;
+    height: 70%;
+    overflow-y: scroll;
   }
   .pagina-content p {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 24px;
-  }
-  
-  .pagina-content h3 {
-    font-size: 32px;
-  }
-  
-  .pagina-content h4 {
-    font-size: 28px;
+    font-size: 16px;
   }
 
+  .pagina-content h3 {
+    font-size: 20px;
+  }
+
+  .pagina-content h4 {
+    font-size: 18px;
+  }
+
+  .burbuja {
+    width: 90vh;
+    height: 90vh;
+  }
 }

@@ -3,6 +3,7 @@
   src: url('./asstes/Candlescript.otf');
 }
 body {
+  transition: 400ms;
   margin: 0;
   font-family: RoyalFont, Times, serif;
   -webkit-font-smoothing: antialiased;

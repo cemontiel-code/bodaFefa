@@ -12,8 +12,6 @@ import { ReactComponent as Bank } from "../asstes/svg/building-columns-solid.svg
 function MyBook() {
   const book = useRef();
 
-
-
   const [modalState, setIsOpen] = useState(false);
   const [modalfirma, setOpenFirma] = useState(false);
   const [modalBank, setOpenBank] = useState(false);
@@ -41,9 +39,9 @@ function MyBook() {
 
   return (
     <HTMLFlipBook
-      width={280}
-      height={420}
-      size="stretch" 
+      width={235}
+      height={375}
+      size="stretch"
       disableFlipByClick="true"
       ref={book}
       style={{ marginTop: "-0.5%" }}
@@ -174,6 +172,7 @@ function MyBook() {
           </p>
         </div>
       </div>
+
       <div className="pagina">
         <div className="pagina-content">
           <h3> codigo de vestimenta </h3>
@@ -181,6 +180,15 @@ function MyBook() {
           <p> Cocktail </p>
         </div>
       </div>
+
+      <div className="pagina">
+        <div className="pagina-content">
+          <h3> codigo de vestimenta </h3>
+          <Dress style={{ maxWidth: "80%" }}></Dress>
+          <p> Cocktail </p>
+        </div>
+      </div>
+      
       <div className="pagina">
         <div className="pagina-content">
           <h3> codigo de vestimenta </h3>
@@ -188,6 +196,7 @@ function MyBook() {
           <p> Elegante Sport</p>
         </div>
       </div>
+      
       <div className="pagina">
         <div className="pagina-content">
           <h3> Regalos </h3>
@@ -202,7 +211,7 @@ function MyBook() {
       <div className="pagina">
         <div className="pagina-content">
           <h3> Regalos</h3>
-          <Glasses style={{ maxWidth: "15%" }}></Glasses>
+          <Glasses style={{ maxWidth: "50%" }}></Glasses>
           <p>
             Regalitos así tengo miles, aunque a veces no sepa que sepamos que
             son.

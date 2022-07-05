@@ -132,22 +132,17 @@
 [class*="cuboid"] .bm {
   top: 100%;
 }
+
 /* .cub-1 styles */
 .cub-1 {
-  transform: translate3D(0em, -0.1em, -0.01em) rotateX(0deg) rotateY(00deg)
+  transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(00deg)
     rotateZ(0deg);
-  opacity: 1;
   width: 17em;
   height: 25em;
   margin: -12.5em 0 0 -8.5em;
 }
 
 [class*="cub-1-active"] {
-  opacity: 1;
-  width: 17em;
-  height: 25em;
-  margin: -12.5em 0em 0 -8.5em;
-
   animation: openR 1500ms linear forwards;
 }
 
@@ -156,46 +151,13 @@
     transform: translate3D(0.1em, 0em, 0em) rotateX(0deg) rotateY(090deg)
       rotateZ(0deg);
   }
-  11% {
-    transform: translate3D(2.95em, 0em, 0em) rotateX(0deg) rotateY(100deg)
-      rotateZ(0deg);
-  }
-  22% {
-    transform: translate3D(4.35em, 0em, 0em) rotateX(0deg) rotateY(110deg)
-      rotateZ(0deg);
-  }
-  33% {
-    transform: translate3D(5.55em, 0em, 0em) rotateX(0deg) rotateY(120deg)
-      rotateZ(0deg);
-  }
-  44% {
-    transform: translate3D(6.6em, 0em, 0em) rotateX(0deg) rotateY(130deg)
-      rotateZ(0deg);
-  }
-  55% {
-    transform: translate3D(7.48em, 0em, 0em) rotateX(0deg) rotateY(140deg)
-      rotateZ(0deg);
-  }
-  66% {
-    transform: translate3D(8.13em, 0em, 0em) rotateX(0deg) rotateY(150deg)
-      rotateZ(0deg);
-  }
-  77% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(160deg)
-      rotateZ(0deg);
-  }
-  88% {
-    transform: translate3D(8.6em, 0em, 0em) rotateX(0deg) rotateY(170deg)
-      rotateZ(0deg);
-  }
-  99% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
-      rotateZ(0deg);
-  }
   100% {
-    transform: translate3D(8.5em, 0em, 0em) rotateX(0deg) rotateY(180deg)
+    transform: translate3D(17.4vw, 0em, -1em) rotateX(0deg) rotateY(180deg)
       rotateZ(0deg);
-    visibility: hidden;
+    width: 35vw;
+    height: 90vh;
+    margin: -45vh 0 0 -17.5vw;
+  
   }
 }
 
@@ -216,14 +178,13 @@
   height: 3em;
 }
 .cub-1 .face {
-  background-color: #ffffff;
+  background-color: pink;
 }
 
 /* .cub-2 styles */
 .cub-2 {
   transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(180deg)
     rotateZ(0deg);
-  opacity: 1;
   width: 17em;
   height: 25em;
   margin: -12.5em 0 0 -8.5em;
@@ -238,42 +199,12 @@
     transform: translate3D(-0.5em, 0em, 0em) rotateX(0deg) rotateY(090deg)
       rotateZ(0deg);
   }
-  11% {
-    transform: translate3D(-2.95em, 0em, 0em) rotateX(0deg) rotateY(080deg)
-      rotateZ(0deg);
-  }
-  22% {
-    transform: translate3D(-4.35em, 0em, 0em) rotateX(0deg) rotateY(070deg)
-      rotateZ(0deg);
-  }
-  33% {
-    transform: translate3D(-5.55em, 0em, 0em) rotateX(0deg) rotateY(060deg)
-      rotateZ(0deg);
-  }
-  44% {
-    transform: translate3D(-6.6em, 0em, 0em) rotateX(0deg) rotateY(050deg)
-      rotateZ(0deg);
-  }
-  55% {
-    transform: translate3D(-7.48em, 0em, 0em) rotateX(0deg) rotateY(040deg)
-      rotateZ(0deg);
-  }
-  66% {
-    transform: translate3D(-8.13em, 0em, 0em) rotateX(0deg) rotateY(030deg)
-      rotateZ(0deg);
-  }
-  77% {
-    transform: translate3D(-8.5em, 0em, 0em) rotateX(0deg) rotateY(020deg)
-      rotateZ(0deg);
-  }
-  88% {
-    transform: translate3D(-8.6em, 0em, 0em) rotateX(0deg) rotateY(010deg)
-      rotateZ(0deg);
-  }
   100% {
-    transform: translate3D(-8.5em, 0em, -0.1em) rotateX(0deg)
-      rotateY(000deg) rotateZ(0deg);
-    visibility: hidden;
+    transform: translate3D(-17.4vw, 0em, -1em) rotateX(0deg) rotateY(000deg)
+      rotateZ(0deg);
+    width: 35vw;
+    height: 90vh;
+    margin: -45vh 0 0 -17.5vw;
   }
 }
 
@@ -283,10 +214,36 @@
 .cub-2 .bk {
   transform: translateZ(-1.5em) rotateY(180deg);
 }
+
 .cub-2 .rt,
 .cub-2 .lt {
   width: 3em;
   height: 25em;
+}
+
+.growX {
+  animation: GrowSideviewX 1500ms linear forwards;
+}
+.growY {
+  animation: GrowSideviewY 1500ms linear forwards;
+}
+
+@keyframes GrowSideviewX {
+  0% {
+    height: 25em;
+  }
+  100% {
+    height: 90vh;
+  }
+}
+
+@keyframes GrowSideviewY {
+  0% {
+    width: 17em;
+  }
+  100% {
+    width: 35vw;
+  }
 }
 .cub-2 .tp,
 .cub-2 .bm {
@@ -299,7 +256,7 @@
 }
 
 .cub-3 {
-  transform: translate3D(0em, 0em, .02em) rotateX(00deg) rotateY(0deg)
+  transform: translate3D(0em, 0em, 1em) rotateX(00deg) rotateY(0deg)
     rotateZ(0deg);
   opacity: 1;
   width: 70vw;
@@ -309,25 +266,39 @@
 }
 
 .cub-3-active {
-  transform: translate3D(0em, 0em, .02em) rotateX(00deg) rotateY(0deg)
+  transform: translate3D(0em, 0em, 1em) rotateX(00deg) rotateY(0deg)
     rotateZ(0deg);
-  opacity: 1;
   width: 70vw;
   height: 90vh;
-  margin: -45.5vh 0 0 -35vw;
+  margin: -45vh 0 0 -35vw;
   padding: 0%;
-  animation: displaybook 2700ms ease-in-out forwards;
+  animation: displaybook 2s ease-in-out forwards;
 }
 
 @keyframes displaybook {
   0% {
     visibility: hidden;
+    opacity: 0;
+  }
+  60% {
+    visibility: visible;
+    opacity: 0.2;
   }
   70% {
-    visibility: hidden;
+    visibility: visible;
+    opacity: 0.4;
+  }
+  80% {
+    visibility: visible;
+    opacity: 0.6;
+  }
+  90% {
+    visibility: visible;
+    opacity: 0.8;
   }
   100% {
     visibility: visible;
+    opacity: 1;
   }
 }
 .cub-3 .ft {
@@ -347,11 +318,39 @@
   height: 3em;
 }
 .cub-3 .face {
-  background-color: rgba(0, 255, 255, 0);
-  background-image: url("/src/asstes/paginBg.png");
+  background-image: url("/src/asstes/13.png");
+  background-size: 50% 100%;
 }
 
-@media (max-width: 844px) and (orientation: landscape) {
+@keyframes openLMobile {
+  from {
+    transform: translate3D(-1.5em, 0em, 0em) rotateX(0deg) rotateY(090deg)
+      rotateZ(0deg);
+  }
+  to {
+    transform: translate3D(-17.4vw, 0, -0.1em) rotateX(0deg) rotateY(000deg)
+      rotateZ(0deg);
+    width: 35vw;
+    height: 100vh;
+    margin: -50vh 0 0 -17.5vw;
+  }
+}
+
+@keyframes openRMobile {
+  from {
+    transform: translate3D(1.5em, 0em, 0em) rotateX(0deg) rotateY(090deg)
+      rotateZ(0deg);
+  }
+  to {
+    transform: translate3D(17.4vw, 0em, -0.1em) rotateX(0deg) rotateY(180deg)
+      rotateZ(0deg);
+    width: 35vw;
+    height: 100vh;
+    margin: -50vh 0 0 -17.5vw;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
   .cub-3 .tp,
   .cub-3 .bm {
     width: 17em;
@@ -367,36 +366,35 @@
   .cub-2 .rt,
   .cub-2 .lt {
     width: 1.5em;
-    height: 12.5em;
+    height: 16.65em;
   }
   .cub-2 .tp,
   .cub-2 .bm {
-    width: 9.55em;
+    width: 11em;
     height: 1.5em;
   }
 
   .cub-1 .rt,
   .cub-1 .lt {
     width: 1.5em;
-    height: 12.5em;
+    height: 16.65em;
   }
   .cub-1 .tp,
   .cub-1 .bm {
-    width: 9.5em;
+    width: 11em;
     height: 1.5em;
   }
 
   .cub-1,
   .cub-2 {
-    width: 9.5em;
-    height: 12.5em;
-    margin: -6.25em 0 0 -4.75em;
+    width: 11em;
+    height: 16.65em;
+    margin: -8.625em 0 0 -5.5em;
   }
 
-  
   .cub-3 {
-    width: 80vw;
-    height: 100vh;
+    width: 70vw;
+    height: 90vh;
     margin: -50vh 0 0 -40vw;
   }
 
@@ -404,11 +402,12 @@
     transform: translate3D(0em, 0em, 1.02em) rotateX(00deg) rotateY(0deg)
       rotateZ(0deg);
     opacity: 1;
-    width: 80vw;
+    width: 70vw;
     height: 100vh;
-    margin: -50vh 0 0 -40vw;
+    margin: -50vh 0 0 -35vw;
     padding: 0%;
-    animation: displaybook 2700ms ease-in-out forwards;}
+    animation: displaybook 2700ms ease-in-out forwards;
+  }
 
   .cub-1 .ft {
     transform: translateZ(0.75em);
@@ -437,5 +436,38 @@
     top: 50%;
     left: 50%;
     margin: -40em 0 0 -40em;
+  }
+
+  .cub-2-active {
+    animation: openLMobile 1200ms linear forwards;
+  }
+
+  .cub-1-active {
+    animation: openRMobile 1200ms linear forwards;
+  }
+
+  .growX {
+    animation: GrowSideviewXM 1200ms linear forwards;
+  }
+  .growY {
+    animation: GrowSideviewYM 1200ms linear forwards;
+  }
+
+  @keyframes GrowSideviewXM {
+    0% {
+      height: 16.65em;
+    }
+    100% {
+      height: 100vh;
+    }
+  }
+
+  @keyframes GrowSideviewYM {
+    0% {
+      width: 11em;
+    }
+    100% {
+      width: 35vw;
+    }
   }
 }
