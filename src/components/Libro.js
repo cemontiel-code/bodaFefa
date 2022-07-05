@@ -200,7 +200,7 @@ function MyBook() {
       <div className="pagina">
         <div className="pagina-content">
           <h3> Regalos</h3>
-          <Glasses style={{ maxWidth: "50%" }}></Glasses>
+          <Glasses style={{ maxWidth: "60%" }}>hola</Glasses>
           <p>
             Regalitos así tengo miles, aunque a veces no sepa que sepamos que
             son.
