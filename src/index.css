@@ -82,6 +82,9 @@ body {
 .pagina-content p {
   font-size: 28px;
 }
+.pagina-content p.h3{
+  font-size: 40px;
+}
 
 .pagina-content h3 {
   font-size: 32px;
@@ -229,6 +232,12 @@ body {
   text-decoration: none;
   padding: 5px;
 }
+#zoom-btn:hover{
+  transform: scale(1.01);
+  background-color: #b57ed4 ;
+  box-shadow: 2px 2px 2px #4F5A62;
+}
+
 
 .Bnk-data-bg {
   background-color: rgba(255, 255, 255, 0.5);
@@ -517,8 +526,8 @@ body {
     font-size: 20px;
   }
 
-  .h3{
-    font-size: 40px;
+  .pagina-content p.h3{
+    font-size: 25px;
   }
   .pagina-content h4 {
     font-size: 18px;
