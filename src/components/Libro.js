@@ -49,7 +49,7 @@ function MyBook() {
       <div className="pagina">
         <div className="pagina-content">
           <p>
-            Con gran orgullo para todos y un enorme place te damos la
+            Con gran orgullo para todos y un enorme placer te damos la
             bienvenida. A Nuestra boda.
           </p>
           <p>
@@ -136,14 +136,12 @@ function MyBook() {
                   width={"100%"}
                   src="https://cdn0.casamientos.com.ar/vendor/7033/3_2/960/jpg/congo-ii_7_147033-158101730157433.jpeg&auto=compress&fit=crop&q=40"
                 />
-                <h4> Congo Club Cultural </h4>
               </div>
               <div className="descRep">
                 <p> Donde y Cuando?</p>
+                <h4> Congo Club Cultural </h4>
 
-                <div
-                  style={{ display: "flex", justifyContent: "space-around" }}
-                >
+                <div className="descFlex">
                   <div>
                     <iframe
                       title="mapRep"
@@ -181,7 +179,6 @@ function MyBook() {
         </div>
       </div>
 
-      
       <div className="pagina">
         <div className="pagina-content">
           <h3> codigo de vestimenta </h3>
@@ -189,7 +186,7 @@ function MyBook() {
           <p> Elegante Sport</p>
         </div>
       </div>
-      
+
       <div className="pagina">
         <div className="pagina-content">
           <h3> Regalos </h3>

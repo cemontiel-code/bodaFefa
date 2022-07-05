@@ -1,4 +1,3 @@
-import "./App.css";
 import Scene from "./components/three/Canvas/Scene";
 import { Stars } from "@react-three/drei";
 import Burbujas from "./components/Burbuja";

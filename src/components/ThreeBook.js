@@ -2,7 +2,6 @@ import React from "react";
 import { ReactComponent as LogoTop } from "../asstes/ornamentos/libro-top.svg";
 import { ReactComponent as LogoLeo } from "../asstes/ornamentos/libro-leon.svg";
 import { useState } from "react";
-import "../css/book.css";
 import MyBook from "./Libro";
 
 const ThreeBook = () => {
