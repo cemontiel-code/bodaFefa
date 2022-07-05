@@ -46,7 +46,7 @@ const ThreeBook = () => {
               <LogoTop className="logo-top"></LogoTop>
               <div className="logo">
                 <h1>
-                  Boda de Cardenas <br /> Montiel
+                  Boda Cardenas <br /> Montiel
                 </h1>
               </div>
               <LogoLeo className="logo-btm"></LogoLeo>

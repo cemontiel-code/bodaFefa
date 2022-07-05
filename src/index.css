@@ -457,7 +457,7 @@ body {
 }
 .descFlex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media (max-width: 900px) and (orientation: portrait) {
   .warning {

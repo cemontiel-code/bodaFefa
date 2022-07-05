@@ -52,13 +52,10 @@ function MyBook() {
             Con gran orgullo para todos y un enorme placer te damos la
             bienvenida. A Nuestra boda.
           </p>
-          <p>
-            <b> en Grande </b>
-          </p>
-          <p>
+          <h3>
             Nuestro huesped, sea usted Venga al servicio a probar Una servilleta
             asi, cherie y nosotros hacemos lo demas.
-          </p>
+          </h3>
         </div>
       </div>
 
@@ -147,7 +144,7 @@ function MyBook() {
                       title="mapRep"
                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6569.396659087155!2d-58.433111000000004!3d-34.586499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb0d1001fa7258aa!2sCongo%20Club%20Cultural!5e0!3m2!1ses!2sar!4v1656640717230!5m2!1ses!2sar"
                       style={{
-                        width: "100%",
+                        width: "95%",
                         height: "100%",
                         border: "5px solid #b28c33",
                       }}
@@ -173,7 +170,7 @@ function MyBook() {
 
       <div className="pagina">
         <div className="pagina-content">
-          <h3> Lugar de la Firma </h3>
+          <h3> Codigo de vestimenta </h3>
           <Dress style={{ maxWidth: "80%" }}></Dress>
           <p> Cocktail </p>
         </div>
@@ -181,7 +178,7 @@ function MyBook() {
 
       <div className="pagina">
         <div className="pagina-content">
-          <h3> codigo de vestimenta </h3>
+          <h3> Codigo de vestimenta </h3>
           <Suit style={{ maxWidth: "80%" }}></Suit>
           <p> Elegante Sport</p>
         </div>
@@ -257,7 +254,11 @@ function MyBook() {
           </div>
         </ReactModal>
       </div>
-      <div className="pagina"></div>
+      <div className="pagina">
+        <div className="pagina-content">
+          <h3>Te esperamos !! ❤</h3>
+        </div>
+      </div>
     </HTMLFlipBook>
   );
 }
