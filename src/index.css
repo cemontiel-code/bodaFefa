@@ -457,8 +457,10 @@ body {
 }
 .descFlex {
   display: flex;
+  width: 90%;
   justify-content: space-between;
 }
+
 @media (max-width: 900px) and (orientation: portrait) {
   .warning {
     opacity: 1;
@@ -537,7 +539,6 @@ body {
     max-width: 100%;
     font-size: 16px;
   }
-
 }
 
 #tridiv {

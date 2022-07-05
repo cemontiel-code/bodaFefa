@@ -50,12 +50,13 @@ function MyBook() {
         <div className="pagina-content">
           <p>
             Con gran orgullo para todos y un enorme placer te damos la
-            bienvenida. A Nuestra boda.
+            bienvenida.
           </p>
-          <h3>
+          <h3>A Nuestra boda.</h3>
+          <p>
             Nuestro huesped, sea usted Venga al servicio a probar Una servilleta
             asi, cherie y nosotros hacemos lo demas.
-          </h3>
+          </p>
         </div>
       </div>
 
@@ -153,6 +154,7 @@ function MyBook() {
                       referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                   </div>
+
                   <div>
                     <p>4 de Septiembre del 20220 </p>
                     <p> 20:00hs a 02:00hs </p>
