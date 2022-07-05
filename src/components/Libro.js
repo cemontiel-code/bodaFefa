@@ -52,7 +52,7 @@ function MyBook() {
             Con gran orgullo para todos y un enorme placer te damos la
             bienvenida.
           </p>
-          <h3>A Nuestra boda.</h3>
+          <p  className="h3">A Nuestra boda.</p>
           <p>
             Nuestro huesped, sea usted Venga al servicio a probar Una servilleta
             asi, cherie y nosotros hacemos lo demas.

@@ -209,6 +209,9 @@ body {
   fill: white;
 }
 .clothes {
+  fill: #4F5A62;
+}
+.clothes1 {
   fill: #bd8b17;
 }
 .bank {
@@ -217,7 +220,7 @@ body {
 }
 #zoom-btn {
   height: 20px;
-  background-color: #2d8cff;
+  background-color: #C19CD6;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 2% /5%;
@@ -514,6 +517,9 @@ body {
     font-size: 20px;
   }
 
+  .h3{
+    font-size: 40px;
+  }
   .pagina-content h4 {
     font-size: 18px;
   }
