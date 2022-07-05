@@ -67,9 +67,9 @@ body {
 }
 
 .pagina-content {
-  margin: 10% 17.5%;
-  width: 65%;
-  height: 70%;
+  margin: 20% ;
+  width: 60%;
+  height: 60%;
   color: #86620f;
   display: flex;
   flex-direction: column;
@@ -80,18 +80,19 @@ body {
 }
 
 .pagina-content p {
-  font-size: 28px;
+  font-size: 30px;
 }
-.pagina-content p.h3{
-  font-size: 40px;
+.pagina-content h1.h3{
+  font-size: 64px;
+  margin: 0px;
 }
 
 .pagina-content h3 {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .pagina-content h4 {
-  font-size: 28px;
+  font-size: 34px;
 }
 
 .location-modal-group {
@@ -585,7 +586,7 @@ body {
   top: 50%;
   left: 50%;
   margin: -40em 0 0 -40em;
-  animation: giros 20s linear infinite;
+  animation: giros 4s linear infinite;
 }
 
 .scene-active {
@@ -613,7 +614,7 @@ body {
     -webkit-transform: rotateX(var(--Ang-libro)) rotateY(180deg);
     -moz-transform: rotateX(var(--Ang-libro)) rotateY(180deg);
     -ms-transform: rotateX(var(--Ang-libro)) rotateY(180deg);
-    transform: rotateX(var(--Ang-libro)) rotateY(180deg);
+    transform: rotateX(var(--Ang-libro)) rotateY(180deg) translatey(-40px);
   }
   75% {
     -webkit-transform: rotateX(var(--Ang-libro)) rotateY(270deg);

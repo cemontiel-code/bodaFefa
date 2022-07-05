@@ -49,10 +49,10 @@ function MyBook() {
       <div className="pagina">
         <div className="pagina-content">
           <p>
-            Con gran orgullo para todos y un enorme placer te damos la
-            bienvenida.
+            Con gran orgullo para todos y un enorme placer<br/> te damos la
+            bienvenida a
           </p>
-          <p className="h3">A Nuestra boda.</p>
+          <h1 className="h3"> Nuestra boda.</h1>
           <p>
             Nuestro huesped, sea usted Venga al servicio a probar Una servilleta
             asi, cherie y nosotros hacemos lo demas.
