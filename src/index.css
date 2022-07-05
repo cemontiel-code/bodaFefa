@@ -88,7 +88,10 @@ body {
 }
 
 .pagina-content h3 {
+  position: absolute;
+  top: 20px;
   font-size: 36px;
+  margin-bottom: 50px;
 }
 
 .pagina-content h4 {
@@ -120,6 +123,8 @@ body {
     rgba(195, 255, 247, 0.8) 100%
   );
   z-index: 100;
+  scroll-behavior: smooth;
+  overflow: scroll;
 }
 .modalsOverlay {
   background-color: rgba(68, 68, 68, 0.7);
@@ -144,11 +149,8 @@ body {
 }
 
 .modals .picture {
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  right: 0%;
-  bottom: 55%;
+  max-width: 50%;
+  max-height: 30%;
 }
 
 .modals .descRep {

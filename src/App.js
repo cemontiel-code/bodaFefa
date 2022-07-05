@@ -6,14 +6,6 @@ import ThreeBook from "./components/ThreeBook";
 import { ReactComponent as Phone } from "./asstes/svg/mobile-screen-solid.svg";
 
 function App() {
-
-  const webapp = document.documentElement;
-
-  if (window.innerWidth<1000) {
-    webapp.requestFullscreen();
-  }
-
-
   return (
     <>
       <Scene className="bg">

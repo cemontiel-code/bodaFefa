@@ -156,7 +156,7 @@ function MyBook() {
                   </div>
 
                   <div>
-                    <p>4 de Septiembre del 20220 </p>
+                    <p> 24 de Septiembre del 2022 </p>
                     <p> 20:00hs a 02:00hs </p>
                   </div>
                 </div>
@@ -200,9 +200,8 @@ function MyBook() {
       <div className="pagina">
         <div className="pagina-content">
           <h3> Regalos</h3>
-          <Glasses style={{ maxWidth: "60%" }}>hola</Glasses>
           <p>
-            Regalitos así tengo miles, aunque a veces no sepa que sepamos que
+            Regalitos asi tengo miles, aunque a veces no sepa que sepamos que
             son.
           </p>
           <button
@@ -213,7 +212,7 @@ function MyBook() {
             Datos Bancarios
           </button>
           <p>
-            Pero nosotros en verdad, queremos más, queremos ver algo especial.
+            Pero nosotros en verdad, queremos mas, queremos ver algo especial.
           </p>
         </div>
         <ReactModal

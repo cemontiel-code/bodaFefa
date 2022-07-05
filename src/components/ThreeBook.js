@@ -25,7 +25,7 @@ const ThreeBook = () => {
           >
             <div className={`face ft portada  `}></div>
             <div className={`face bk pagina   `}></div>
-            <div className={`face rt sideview ${active ? '':'growX'} `}></div>
+            <div className={`face rt portada ${active ? '':'growX'} `}></div>
             <div className={`face lt sideview ${active ? '':'growX'} `}></div>
             <div className={`face bm sideview ${active ? '':'growY'} `}></div>
             <div className={`face tp sideview ${active ? '':'growY'} `}></div>
