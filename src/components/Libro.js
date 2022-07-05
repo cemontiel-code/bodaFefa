@@ -175,19 +175,12 @@ function MyBook() {
 
       <div className="pagina">
         <div className="pagina-content">
-          <h3> codigo de vestimenta </h3>
+          <h3> Lugar de la Firma </h3>
           <Dress style={{ maxWidth: "80%" }}></Dress>
           <p> Cocktail </p>
         </div>
       </div>
 
-      <div className="pagina">
-        <div className="pagina-content">
-          <h3> codigo de vestimenta </h3>
-          <Dress style={{ maxWidth: "80%" }}></Dress>
-          <p> Cocktail </p>
-        </div>
-      </div>
       
       <div className="pagina">
         <div className="pagina-content">
