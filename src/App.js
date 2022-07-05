@@ -1,6 +1,7 @@
 import Scene from "./components/three/Canvas/Scene";
 import { Stars } from "@react-three/drei";
 import Burbujas from "./components/Burbuja";
+import ThreeBook from "./components/ThreeBook";
 
 import { ReactComponent as Phone } from "./asstes/svg/mobile-screen-solid.svg";
 
@@ -14,6 +15,7 @@ function App() {
       </Scene>
       <div className="main">
         <Burbujas />
+        <ThreeBook></ThreeBook>
       </div>
       <div className="warning">
         <p> Por favor gire su</p>

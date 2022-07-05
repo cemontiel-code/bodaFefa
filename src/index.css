@@ -330,6 +330,7 @@ body {
   display: flex;
   place-items: center;
   position: absolute;
+  z-index: 100;
 }
 
 @keyframes bubleFloat {

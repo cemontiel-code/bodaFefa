@@ -14,7 +14,7 @@ function Burbujas() {
     <>
       <div className={active ? "burbuja": 'popped'}
       onClick={popHandler}>
-        <ThreeBook ></ThreeBook>
+        
       </div>
     </>
   );
