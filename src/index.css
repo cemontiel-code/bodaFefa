@@ -475,7 +475,7 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 900px) and (orientation: portrait) {
+@media (max-width: 1000px) and (orientation: portrait) {
   .warning {
     opacity: 1;
   }
@@ -483,7 +483,7 @@ body {
     opacity: 0;
   }
 }
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .warning {
     opacity: 0;
   }
@@ -904,7 +904,7 @@ body {
   }
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .cub-3 .tp,
   .cub-3 .bm {
     width: 17em;
