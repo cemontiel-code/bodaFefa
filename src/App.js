@@ -7,7 +7,7 @@ import { ReactComponent as Phone } from "./asstes/svg/mobile-screen-solid.svg";
 
 function App() {
 
-  const webapp =document.documentElement;
+  const webapp = document.documentElement;
 
   if (window.innerWidth<1000) {
     webapp.requestFullscreen();

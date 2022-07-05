@@ -39,8 +39,8 @@ function MyBook() {
 
   return (
     <HTMLFlipBook
-      width={235}
-      height={375}
+      width={240}
+      height={400}
       size="stretch"
       disableFlipByClick="true"
       ref={book}
