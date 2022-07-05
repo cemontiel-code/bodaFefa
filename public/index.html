@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="minimal-ui, width=device-width, initial-scale=1"
-    />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Cardenas & Montiel" content="Bienvenidos a nuestros futuro" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <title>Boda de Cardi y Fefa</title>
   </head>
@@ -19,11 +14,23 @@
     <div id="root"></div>
 
     <script>
-      const webapp = document.documentElement;
-
-      if (window.innerWidth < 1000) {
-        webapp.requestFullscreen();
+    
+     async function launchFullScreen(element) {
+        if (element.requestFullScreen) {
+          await  element.requestFullScreen();
+          alert('success');
+        } else if (element.mozRequestFullScreen) {
+          await element.mozRequestFullScreen();
+          alert('success');
+        } else if (element.webkitRequestFullScreen) {
+          await element.webkitRequestFullScreen();
+          alert('success');
+        }
       }
+      let webapp = document.getElementsByTagName("html")      
+      launchFullScreen(webapp)
+      alert('gaminh')
+      
     </script>
   </body>
 </html>

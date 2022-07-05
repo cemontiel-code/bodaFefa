@@ -6,7 +6,6 @@ import { ReactComponent as Zoom } from "../asstes/svg/video-solid.svg";
 import { ReactComponent as Dress } from "../asstes/svg/dress.svg";
 import { ReactComponent as Suit } from "../asstes/svg/suit.svg";
 import { ReactComponent as Gift } from "../asstes/svg/gift-solid.svg";
-import { ReactComponent as Glasses } from "../asstes/svg/champagne-glasses-solid.svg";
 import { ReactComponent as Bank } from "../asstes/svg/building-columns-solid.svg";
 
 function MyBook() {
@@ -257,7 +256,7 @@ function MyBook() {
       </div>
       <div className="pagina">
         <div className="pagina-content">
-          <h3>Te esperamos !! ❤</h3>
+          <h2>Te esperamos !! ❤</h2>
         </div>
       </div>
     </HTMLFlipBook>
