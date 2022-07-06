@@ -256,7 +256,7 @@ function MyBook() {
       </div>
       <div className="pagina">
         <div className="pagina-content">
-          <h2>Te esperamos !! ❤</h2>
+          <h4>Te esperamos !! ❤</h4>
         </div>
       </div>
     </HTMLFlipBook>
