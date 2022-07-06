@@ -101,7 +101,7 @@ function MyBook() {
                 id="zoom-btn"
                 target={"_blank"}
                 rel="noreferrer"
-                href="https://us04web.zoom.us/j/74383387578?pwd=iynWrf0ZxlDzc6y_kZc_IcSCAUyoIn.1"
+                href="https://meet.google.com/eod-akia-mpt"
               >
                 <Zoom
                   style={{
