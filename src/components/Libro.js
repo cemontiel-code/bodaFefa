@@ -200,7 +200,7 @@ function MyBook() {
         <div className="pagina-content">
           <h3> Regalos</h3>
           <p>
-            Regalitos asi tengo miles, aunque a veces no sepa que
+            Regalitos asi tengo miles, aunque a veces no se sepa que
             son.
           </p>
           <button
